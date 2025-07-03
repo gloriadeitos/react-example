@@ -102,3 +102,46 @@ const Home = () => {
 
 export default Home;
 ```
+
+## Biblioteca visual
+
+Nesse caso vou usar o Tailwind, link: https://tailwindcss.com/docs/installation/using-vite
+Siga o tutorial pra baixar o Tailwind no site oficial na aba "Installation"
+
+O site oficial não fala, mas isso daqui:
+
+```bash
+@import "tailwindcss";
+```
+
+Você precisa colocar no App.css
+
+## Ícones
+
+Você pode usar vários, pessoalmente eu uso o FontAwesome: https://docs.fontawesome.com/v5/web/use-with/react
+
+Use:
+
+```bash
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome
+```
+
+Com os ícones baixados, pra melhor organização, importe eles em src/utils/icons.ts
+
+Nesse icons.ts coloque:
+
+```bash
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+export { FontAwesomeIcon};
+```
+
+## Deploy
+
+Para fazer deploy, você precisa rodar o comando
+
+```bash
+npm run build
+```
+
+Com isso, ele cria uma pasta chamada "dist", e no seu servidor você coloca esse dist.
