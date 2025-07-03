@@ -11,7 +11,7 @@ import Pagina from './pages/pagina'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-example">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aa" element={<Pagina />} />
